@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chicago Crown FC</title>
+  <meta name="description" content="Chicago Crown FC — Youth soccer club. Team roster, schedule, news, photos, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <!-- Replace the src below with your real logo file (e.g. assets/logo.png). -->
+        <img src="assets/logo-placeholder.png" alt="Chicago Crown FC logo" id="club-logo">
+        <div class="brand-text">
+          <span class="club-name">Chicago Crown</span>
+          <small class="club-type">FC</small>
+        </div>
+      </a>
+
+      <button id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#roster">Team</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact / Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Chicago Crown FC</h1>
+          <p class="lead">Pride. Passion. Progress. Youth soccer built the right way — black &amp; gold.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#join">Join Us</a>
+            <a class="btn btn-secondary" href="#schedule">View Schedule</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <!-- You can replace this with a high-res team photo -->
+          <img src="assets/hero-photo-placeholder.jpg" alt="Chicago Crown FC players" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About the Club</h2>
+        <p>Chicago Crown FC develops confident, technical players while emphasizing teamwork and sportsmanship. Our coaches focus on long-term player development and a pathway to competitive youth leagues.</p>
+
+        <div class="two-col">
+          <div>
+            <h3>Mission</h3>
+            <p>To create a soccer-first environment that builds character, skills, and community — on and off the field.</p>
+          </div>
+          <div>
+            <h3>Core Values</h3>
+            <ul>
+              <li>Respect &amp; Sportsmanship</li>
+              <li>Hard Work &amp; Development</li>
+              <li>Community Engagement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROSTER -->
+    <section id="roster" class="section roster">
+      <div class="container">
+        <h2>Team / Roster</h2>
+        <p>Coached by Coach Zakaria. Below is a sample roster — swap in the real player names, numbers, photos, and bios.</p>
+
+        <div class="roster-grid">
+          <!-- Example player card -->
+          <article class="player-card">
+            <img src="assets/player-placeholder.jpg" alt="Player photo — Aaron" />
+            <div class="player-info">
+              <h4>Aaron Garcia</h4>
+              <p class="position">Forward • #9</p>
+              <p class="bio">Quick winger with strong dribbling and a nose for goal.</p>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <img src="assets/player-placeholder.jpg" alt="Player photo — Marcus" />
+            <div class="player-info">
+              <h4>Marcus Lee</h4>
+              <p class="position">Midfielder • #8</p>
+              <p class="bio">Distribution and playmaking from midfield.</p>
+            </div>
+          </article>
+
+          <!-- Add more player-card blocks as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section schedule">
+      <div class="container">
+        <h2>Schedule / Fixtures</h2>
+        <p>All times local. Replace this sample schedule with your official fixtures.</p>
+
+        <div class="schedule-controls">
+          <label for="filter-date">Filter by date:</label>
+          <input type="date" id="filter-date" />
+          <button id="clear-filter" class="btn">Clear</button>
+        </div>
+
+        <table class="schedule-table" aria-describedby="schedule-desc">
+          <caption id="schedule-desc">Upcoming fixtures for Chicago Crown FC</caption>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Opponent</th>
+              <th>Time</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody id="schedule-body">
+            <tr data-date="2025-11-15">
+              <td>Nov 15, 2025</td>
+              <td>Lakeview United</td>
+              <td>10:00 AM</td>
+              <td>Lincoln Park Field 3</td>
+            </tr>
+            <tr data-date="2025-11-22">
+              <td>Nov 22, 2025</td>
+              <td>Westside Warriors</td>
+              <td>2:00 PM</td>
+              <td>Westside Complex</td>
+            </tr>
+            <tr data-date="2025-12-06">
+              <td>Dec 6, 2025</td>
+              <td>Southside Select</td>
+              <td>11:30 AM</td>
+              <td>Community Stadium</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p>Team photos, match highlights, and training sessions. Replace placeholders with your images.</p>
+
+        <div class="gallery-grid">
+          <img src="assets/gallery-1-placeholder.jpg" alt="Gallery image 1">
+          <img src="assets/gallery-2-placeholder.jpg" alt="Gallery image 2">
+          <img src="assets/gallery-3-placeholder.jpg" alt="Gallery image 3">
+          <img src="assets/gallery-4-placeholder.jpg" alt="Gallery image 4">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / JOIN -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 id="join">Contact & Join</h2>
+        <p>Interested in joining Chicago Crown FC or have questions? Reach out below.</p>
+
+        <div class="contact-grid">
+          <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message / Questions</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="small-note">Or email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          </form>
+
+          <aside class="contact-info">
+            <h3>Club Contact</h3>
+            <p><strong>Coach:</strong> Coach Zakaria</p>
+            <p><strong>Email:</strong> youremail@example.com</p>
+            <p><strong>Phone:</strong> (555) 555-5555</p>
+
+            <h4>Training</h4>
+            <p>Tuesdays & Thursdays • 6:00 PM — 8:00 PM <br>Lincoln Park Field 3</p>
+
+            <div class="socials">
+              <!-- Simple social link icons -->
+              <a href="#" aria-label="Instagram" title="Instagram">IG</a>
+              <a href="#" aria-label="Facebook" title="Facebook">FB</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Chicago Crown FC</div>
+      <div class="footer-right">
+        <small>Black &amp; Gold</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
